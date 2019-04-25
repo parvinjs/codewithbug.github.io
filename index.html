@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<meta charset="utf-8">
 <style>
 html,body{
 	width:100%;
@@ -8,11 +9,29 @@ html,body{
 	margin:0;
 }
 .sol{
-	height:100%;
-	margin:0;
-	width:20%;
-	background:white;
-	box-shadow:0 0 10px 0 lightgrey;
+    height: 86%;
+    margin: 0;
+    z-index: 3;
+    position: absolute;
+    width: 20%;
+    background: white;
+    box-shadow: 0 4px 5px 0 lightgrey;
+    top: 14%;
+}
+
+.sol>p{
+    color: black;
+    text-align: center;
+    font-family: arial;
+    font-size: 23px;
+    margin: 0% 0;
+    padding: 4% 0;
+    cursor:pointer;
+    transition:background 0.2s,color 0.3s;
+}
+.sol>p:hover{
+	background:#00E676;
+	color:white;
 }
 .esas{
     width: 80%;
@@ -21,7 +40,7 @@ html,body{
     top: 0;
     box-sizing: border-box;
     right: 0;
-    padding-top: 6%;
+    padding-top: 8%;
 }
 .profil{
     width: 30%;
@@ -45,10 +64,66 @@ img{
     margin: 4% 7%;
     width: 16%;
 }
+.navbar{
+    width: 100%;
+    box-shadow: 0 0 10px 0 lightgrey;
+    height: 14%;
+    z-index: 3;
+    position: absolute;
+    background: white;
+	
+}
+.avatar{
+    width: 4%;
+    margin: 0;
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.secim{
+    display: inline-block;
+    font-size: 20px;
+    font-family: arial;
+    margin: 0 2%;
+    position: relative;
+    left: 52%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor:pointer;
+    transition:color 0.3s;
+}
+.secim:hover{
+	color:#00C853;
+}
 </style>
 </head>
 <body>
+<div class="navbar">
+<p class="avatar">
+<img src="http://chittagongit.com/images/programmer-icon/programmer-icon-11.jpg">
+</p>
+<p class="secim">
+Ana Səhifə
+</p>
+<p class="secim">
+Biz Kimik ?
+</p>
+<p class="secim">
+Layihələr
+</p>
+<p class="secim">
+Əlaqə
+</p>
+
+</div>	
+
 <div class="sol">
+<p>Userlər</p>
+<p>Komandalar</p>
+<p>Tapşırığlar</p>
+<p>Nəticələr</p>
+<p>Gələcək Planlar</p>
 </div>
 <div class="esas">
 <div class="profil">
